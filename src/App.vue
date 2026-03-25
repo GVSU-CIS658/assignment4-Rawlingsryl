@@ -94,7 +94,6 @@ var currentTemp = beverageStore.currentTemp;
 var currentBase = beverageStore.currentBase;
 var currentSyrup = beverageStore.currentSyrup;
 var currentCreamer = beverageStore.currentCreamer;
-var currentName = beverageStore.currentName;
 
 function updateCreamer(creamer :{id: string, name: string, color: string}){
   currentCreamer = creamer;
