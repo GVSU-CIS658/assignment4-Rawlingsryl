@@ -2,10 +2,17 @@
   <div class="baseBeverage"></div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+type Props = {
+  color: string;
+};
+defineProps<Props>();
+</script>
+
 
 <style scoped>
 .baseBeverage {
+  background-color: v-bind(color);
   position: relative;
   width: 100%;
   height: 100%;

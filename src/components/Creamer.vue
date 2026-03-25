@@ -4,7 +4,11 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+type Props = {
+  color: string;
+};
+defineProps<Props>();</script>
 <style lang="scss" scoped>
 .froth {
   overflow: visible;
@@ -17,7 +21,7 @@
 }
 .foam {
   display: block;
-  background: #e4e0d2;
+  background: v-bind(color);
   border-radius: 30px;
   height: 40px;
   width: 40px;
